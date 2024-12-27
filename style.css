@@ -58,7 +58,7 @@
 font-family: 35px;
 z-index: 101; /* para que este sobre el header*/
 cursor: pointer;/* para que aparezca la manito cuando ponemos el mouse encima*/
-
+display: none;
 }
 
 
@@ -115,7 +115,7 @@ padding: 0 8% ;
   line-height: 1.9;
 }
 
-.hero-img{
+.hero-img img{
   width: 400px;
   margin: 10% 0 0 10%;
   height: auto;
@@ -176,13 +176,13 @@ padding: 0 8% ;
   transform: translateY(-5px);
  } 
 
-.scroll-dom{
+.scroll-down{
   position: absolute;
   bottom: 6%;
   right: 3%;
 }
 
-.scroll-dom i{
+.scroll-down i{
   display: block;
   padding: 12px;
   font-size: 35px;
@@ -191,7 +191,7 @@ padding: 0 8% ;
   transition: all .5s ease;
   }
 
-.scroll-dom i:hover{
+.scroll-down i:hover{
   transform: translateY(-5px);
 }
 
@@ -218,7 +218,7 @@ padding: 0 8% ;
       .icons{
         display: none;
       }
-      .scroll-dom{
+      .scroll-down{
         display: none;
       }
 }
@@ -247,7 +247,7 @@ padding: 0 8% ;
  top: 100%;
  right: -100%;
  width: 200px;
- height: 180%;
+ height: 180px;
  background-color: #021719ef;
  display: flex;
  flex-direction: column;
@@ -258,10 +258,10 @@ padding: 0 8% ;
 .navlist a{
   display: block;
   margin: 7px 0;
-
 }
-#menu-toggle:checked + label.menu-icon-action + ul{
-  right: 0;
+
+.navlist.open {
+right: 0;
 }
 
 }
